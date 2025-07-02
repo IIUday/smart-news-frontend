@@ -11,7 +11,7 @@ export default function Home() {
   const [analysis, setAnalysis] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/news/general')
+    fetch('https://smart-news-backend-1.onrender.com')
       .then(res => res.json())
       .then(setAllNews);
   }, []);
